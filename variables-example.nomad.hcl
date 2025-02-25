@@ -24,7 +24,7 @@ job "variables-example" {
       # Task group will have an isolated network namespace with
       # an interface that is bridged with the host
       port "www" {
-        to = 9001
+        static = 5050
       }
     }
 
@@ -40,7 +40,7 @@ job "variables-example" {
       config {
         image   = "busybox:1"
         command = "httpd"
-        args    = ["-v", "-f", "-p", "8001", "-h", "/local"]
+        args    = ["-v", "-f", "-p", "${NOMAD_PORT_www}", "-h", "/local"]
         ports   = ["www"]
       }
 

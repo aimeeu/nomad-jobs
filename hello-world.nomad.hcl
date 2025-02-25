@@ -21,7 +21,7 @@ job "hello-world" {
 
     network {
       port "www" {
-        to = 8001
+        static = 5000
       }
     }
 
@@ -64,3 +64,4 @@ job "hello-world" {
     }
   }
 }
+
