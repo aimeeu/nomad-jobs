@@ -2,7 +2,7 @@
 
 [Nomad job specification](https://developer.hashicorp.com/nomad/docs/job-specification)
 
-This diagram contains only the job spec parameters that are custom objects. I did not include parameters whose values are primitives, such as job.name (String).
+This diagram contains only the job spec parameters that are custom objects (blocks in the job spec). I did not include parameters whose values are primitives, such as job.name (String).
 
 ```mermaid
 erDiagram
