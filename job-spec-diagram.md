@@ -1,5 +1,9 @@
 # Nomad job spec entities
 
+[Nomad job specification](https://developer.hashicorp.com/nomad/docs/job-specification)
+
+This diagram contains only the job spec parameters that are custom objects. I did not include parameters whose values are primitives, such as job.name (String).
+
 ```mermaid
 erDiagram
     direction LR
